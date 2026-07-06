@@ -15,7 +15,7 @@ use MercadoPago\Client\Preference\PreferenceClient;
 use MercadoPago\MercadoPagoConfig;
 
 // 3. Configura tu Access Token (REEMPLAZA CON TU TOKEN REAL)
-MercadoPagoConfig::setAccessToken("TU_ACCESS_TOKEN_AQUI");
+MercadoPagoConfig::setAccessToken("APP_USR-7999825053986712-070600-e87c755b0a3f934c8b18448ecdca50ac-250750027");
 
 // 4. Recibir y decodificar los datos del frontend
 $json = file_get_contents('php://input');
