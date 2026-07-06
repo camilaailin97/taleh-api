@@ -1,5 +1,9 @@
 <?php
-// 1. Configuración de seguridad para evitar bloqueos del navegador
+// Desactivar visualización de errores HTML
+ini_set('display_errors', 0);
+error_reporting(0);
+
+// Configuración de CORS
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Methods: POST, OPTIONS");
 header("Access-Control-Allow-Headers: Content-Type");
@@ -8,6 +12,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
     exit;
 }
 
+// Asegurar que la respuesta sea siempre JSON
+header('Content-Type: application/json');
+
+// --- Resto de tu código (require 'vendor/autoload.php', etc.) ---
 // 2. Cargar la librería de Mercado Pago (asegúrate de tenerla instalada vía composer)
 require 'vendor/autoload.php';
 
