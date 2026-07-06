@@ -15,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 // Asegurar que la respuesta sea siempre JSON
 header('Content-Type: application/json');
 
-// --- Resto de tu código (require 'vendor/autoload.php', etc.) ---
 // 2. Cargar la librería de Mercado Pago (asegúrate de tenerla instalada vía composer)
 require 'vendor/autoload.php';
 
