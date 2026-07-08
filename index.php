@@ -15,7 +15,7 @@ $data = json_decode($json, true);
 
 // 3. Preparar la petición a Mercado Pago
 $url = "https://api.mercadopago.com/checkout/preferences";
-$token = "APP_USR-7999825053986712-070600-e87c755b0a3f934c8b18448ecdca50ac-250750027";
+$token = getenv('ACCESS_TOKEN');
 
 $body = json_encode([
     "items" => [[
